@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💒 Wedding Guest List App
 
-## Getting Started
+Aplikasi manajemen daftar tamu undangan pernikahan dengan fitur:
+- ✅ Tambah tamu dengan validasi duplikat (Nama + Alamat)
+- ✏️ Edit data tamu
+- 🗑️ Hapus tamu
+- 📥 Download data ke CSV
+- 🔄 Real-time sync dengan Google Sheets
+- 📱 Responsive design
 
-First, run the development server:
+## 🚀 Quick Deploy ke Vercel (GRATIS)
+
+### Opsi 1: Deploy via Website (PALING MUDAH)
+
+1. **Push ke GitHub**
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push
+   ```
+
+2. **Deploy di Vercel**
+   - Buka [vercel.com](https://vercel.com)
+   - Login dengan GitHub
+   - Klik **Add New... > Project**
+   - Pilih repository ini
+   - Tambahkan Environment Variable:
+     - `NEXT_PUBLIC_APPS_SCRIPT_URL` = URL Apps Script Anda
+   - Klik **Deploy**
+
+3. **Selesai!** 🎉
+   - Aplikasi akan online di `https://nama-project.vercel.app`
+
+### Opsi 2: Deploy via CLI
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install Vercel CLI
+npm install -g vercel
+
+# Login
+vercel login
+
+# Deploy
+vercel
+
+# Set environment variable saat diminta
+# NEXT_PUBLIC_APPS_SCRIPT_URL = (paste URL Apps Script)
+
+# Deploy production
+vercel --prod
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Setup Google Apps Script
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Buka Google Sheet baru
+2. **Extensions > Apps Script**
+3. Copy kode dari `apps-script/Code.gs`
+4. **Deploy > New deployment**
+   - Type: **Web app**
+   - Execute as: **Me**
+   - Who has access: **Anyone**
+5. Copy **Web App URL**
+6. Paste URL ke `.env.local` atau Vercel Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Development
 
-## Learn More
+```bash
+# Install dependencies
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Run development server
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Build for production
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start production server
+npm start
+```
 
-## Deploy on Vercel
+## 📦 Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework**: Next.js 16
+- **Styling**: TailwindCSS 4
+- **Database**: Google Sheets (via Apps Script)
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📖 Dokumentasi Lengkap
+
+Lihat [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) untuk panduan deploy lengkap.
+
+## 🎨 Features
+
+### Duplicate Detection
+Aplikasi akan mencegah input tamu dengan kombinasi Nama + Alamat yang sama.
+
+### Real-time Sync
+Semua perubahan langsung tersimpan di Google Sheets dan bisa diakses bersama.
+
+### Export CSV
+Download data tamu dalam format CSV untuk keperluan lain.
+
+## 📞 Support
+
+Jika ada masalah, cek:
+1. Apps Script sudah di-deploy dengan akses "Anyone"
+2. Environment variable `NEXT_PUBLIC_APPS_SCRIPT_URL` sudah diisi
+3. Google Sheet sudah di-share dengan Service Account (jika pakai Service Account)
+
+---
+
+Made with ❤️ for your special day
