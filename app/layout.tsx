@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Wedding Guest List",
-  description: "Manage your wedding invitations efficiently.",
+  title: "Daftar Undangan Wedding TASYA",
+  description: "Sistem manajemen daftar tamu undangan pernikahan TASYA.",
 };
 
 export default function RootLayout({

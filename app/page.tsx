@@ -14,10 +14,10 @@ export default async function Home() {
         <div className="flex items-center justify-center gap-3 mb-2">
           <Heart className="h-8 w-8 text-rose-500 fill-rose-500 animate-pulse" />
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 font-heading">
-            Wedding <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Invitations</span>
+            Daftar Undangan <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Wedding TASYA</span>
           </h1>
         </div>
-        <p className="text-lg text-slate-600 font-medium">Manage your guest list with ease and style.</p>
+        <p className="text-lg text-slate-600 font-medium">Kelola daftar tamu undangan dengan mudah dan praktis.</p>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -28,7 +28,7 @@ export default async function Home() {
             {/* Quick Stats or Info could go here */}
             <div className="mt-6 bg-indigo-900 text-white rounded-2xl p-6 shadow-xl relative overflow-hidden">
                 <div className="relative z-10">
-                    <p className="opacity-80 text-sm font-medium mb-1">Total Guests</p>
+                    <p className="opacity-80 text-sm font-medium mb-1">Total Tamu</p>
                     <p className="text-4xl font-bold">{guests.length}</p>
                 </div>
                 <div className="absolute -bottom-4 -right-4 h-24 w-24 bg-white/10 rounded-full blur-2xl"></div>

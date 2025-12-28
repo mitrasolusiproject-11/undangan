@@ -89,8 +89,8 @@ export function GuestList({ guests }: { guests: Guest[] }) {
       <div className="bg-white/80 backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl overflow-hidden flex flex-col h-full">
         <div className="p-6 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h2 className="text-xl font-bold text-slate-800">Guest List</h2>
-            <p className="text-slate-500 text-sm">{filteredGuests.length} guests found</p>
+            <h2 className="text-xl font-bold text-slate-800">Daftar Tamu</h2>
+            <p className="text-slate-500 text-sm">{filteredGuests.length} tamu ditemukan</p>
           </div>
           
           <div className="flex gap-2">

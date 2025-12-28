@@ -43,8 +43,8 @@ export function GuestForm() {
 
   return (
     <div className="bg-white/80 backdrop-blur-lg border border-white/20 rounded-2xl shadow-xl p-6 md:p-8">
-      <h2 className="text-2xl font-bold text-slate-800 mb-2">New Invitation</h2>
-      <p className="text-slate-500 mb-6">Add a guest to your wedding list.</p>
+      <h2 className="text-2xl font-bold text-slate-800 mb-2">Tambah Tamu Baru</h2>
+      <p className="text-slate-500 mb-6">Tambahkan tamu ke daftar undangan.</p>
 
       {state.error && (
         <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-3 text-red-700 animate-in fade-in slide-in-from-top-2">
