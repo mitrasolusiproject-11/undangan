@@ -11,13 +11,12 @@ export default async function Home() {
   return (
     <main className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
       <header className="mb-10 text-center space-y-2">
-        <div className="flex items-center justify-center gap-3 mb-2">
+        <div className="flex items-center justify-center gap-3">
           <Heart className="h-8 w-8 text-rose-500 fill-rose-500 animate-pulse" />
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 font-heading">
             Daftar Undangan <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Wedding TASYA</span>
           </h1>
         </div>
-        <p className="text-lg text-slate-600 font-medium">Kelola daftar tamu undangan dengan mudah dan praktis.</p>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
